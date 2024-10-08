@@ -2,6 +2,8 @@
 
 A super basic GraphQL server compiling with Typescript.
 
+Watch the video to build together:
+https://youtu.be/c58T0dy1QlM
 
 ## Getting started
 
