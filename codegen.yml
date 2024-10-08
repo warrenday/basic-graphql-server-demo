@@ -1,0 +1,15 @@
+schema: ["src/**/schema.graphql"]
+generates:
+  src/types/generated/resolvers.ts:
+    plugins:
+      - "typescript"
+      - "typescript-resolvers"
+    config:
+      typesPrefix: I
+      defaultMapper: Partial<{T}>
+      # # contextType: src/index#IContext
+      mappers:
+        User: "@prisma/client#User"
+        Post: "@prisma/client#Post"
+      namingConvention:
+        enumValues: change-case#upperCase
